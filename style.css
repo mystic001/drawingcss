@@ -71,14 +71,17 @@ border-radius: 52% 48% 45% 55% / 39% 34% 66% 61%;
 .drop:hover{
     position: absolute;
     animation-duration: 5s;
-    transition: 3s ease-in-out;
+    transition: 5s ease-in-out;
     background-color: #00f; 
     animation: rightThenLeft 5s infinite;
 }
 
 
   @keyframes rightThenLeft {
-    0%   {margin-right:0;}
-    50%  {transform: translateY(100px);}
-    100% {margin-right:0;}
+    0%   {margin-right:0;
+        background-color: #fff; }
+    50%  {transform: translateY(100px);
+        background-color: #00f; }
+    100% {margin-right:0;
+        background-color: #fff;}
 }
